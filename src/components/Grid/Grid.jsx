@@ -12,12 +12,14 @@ const Grid = ({ data }) => {
     return rowItems;
   };
   return (
+    
     <table className={styles.table}>
       <tr>{getRowItems(data[0], true)}</tr>
       {data.map((row, idx) => (
         <tr key={idx}>{getRowItems(row, false)}</tr>
       ))}
     </table>
+  
   );
 };
 export default Grid;
