@@ -6,6 +6,7 @@
   border-radius: 3px;
   min-width: 70px;
   text-align: center;
+  cursor: pointer;
 }
 .pageNumber {
   min-width: 30px;
