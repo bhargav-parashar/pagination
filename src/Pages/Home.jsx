@@ -27,7 +27,7 @@ const Home = () => {
         setList(data);
         setIsLoading(false);
       } catch (err) {
-        console.log(err);
+        alert("failed to fetch data");
         setIsLoading(false);
       }
     };
