@@ -14,10 +14,12 @@ const Grid = ({ data }) => {
   return (
     
     <table className={styles.table}>
-      <tr>{getRowItems(data[0], true)}</tr>
+      <thead><tr>{getRowItems(data[0], true)}</tr></thead>
+      <tbody>
       {data.map((row, idx) => (
         <tr key={idx}>{getRowItems(row, false)}</tr>
       ))}
+      </tbody>
     </table>
   
   );
