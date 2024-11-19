@@ -42,13 +42,29 @@ const Home = () => {
   }, [currentPage, list]);
 
   return (
-    <>
-      {isLoading ? (
-        <div className={styles.loading}>
-          <p style={{ fontSize: "3vw" }}>Loading...</p>
-        </div>
-      ) : (
-        <div className={styles.wrapper}>
+    // <>
+    //   {isLoading ? (
+    //     <div className={styles.loading}>
+    //       <p style={{ fontSize: "3vw" }}>Loading...</p>
+    //     </div>
+    //   ) : (
+    //     <div className={styles.wrapper}>
+    //       <h3 className={styles.heading}>Employee Data</h3>
+    //       {paginatedList.length > 0 && (
+    //         <div className={styles.gridWrapper}>
+    //           <Grid data={paginatedList}></Grid>
+    //         </div>
+    //       )}
+
+    //       <Pagination
+    //         currentPage={currentPage}
+    //         setCurrentPage={setCurrentPage}
+    //         totalPages={totalPages}
+    //       />
+    //     </div>
+    //   )}
+    // </>
+    <div className={styles.wrapper}>
           <h3 className={styles.heading}>Employee Data</h3>
           {paginatedList.length > 0 && (
             <div className={styles.gridWrapper}>
@@ -62,8 +78,6 @@ const Home = () => {
             totalPages={totalPages}
           />
         </div>
-      )}
-    </>
   );
 };
 export default Home;
