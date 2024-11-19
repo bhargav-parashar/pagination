@@ -1,0 +1,12 @@
+.button {
+  background-color: #006a4e;
+  color: white;
+  border: none;
+  padding: 0.6vw;
+  border-radius: 3px;
+  min-width: 70px;
+  text-align: center;
+}
+.pageNumber {
+  min-width: 30px;
+}
